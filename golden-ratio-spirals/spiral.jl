@@ -1,4 +1,5 @@
 using Plots
+gr()
 
 function pattern(θ)
     t = range(0, step=θ, length=800)
