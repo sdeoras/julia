@@ -15,7 +15,7 @@ end
 given a line broken down into two parts 'a' and 'b'
     |---------------|------|
             a           b
-ϕ = a/b iff a/b == (a+b)/b
+ϕ = a/b iff a/b == (a+b)/a
 ϕ is called golden ratio and can be solved quadratically
 ϕ = (1 + √5)/2
 
