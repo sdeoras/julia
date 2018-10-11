@@ -3,7 +3,7 @@ gr()
 
 # pattern takes angle of shift θ
 # and makes a spiral polar plot.
-function pattern(θ::Float64, title::String)
+function pattern(θ::Float64, title::String="")
     t = range(0, step=θ, length=800)
     r = range(0, stop=1, length=length(t))
     x = r.*cos.(t)
