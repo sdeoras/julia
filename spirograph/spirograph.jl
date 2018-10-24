@@ -12,5 +12,7 @@ end
 
 function drawSpirograph(; ratio=4.0, pen=1.0, revolutions=1)
 	x, y = spirograph(ratio=ratio, pen=pen, revolutions=revolutions)
-	plot(x, y, size=[500, 450])
+	plot(x, y, size=[500, 450], linecolor=:red)
 end
+
+drawSpirograph(ratio=4.12, pen=0.7, revolutions=100)

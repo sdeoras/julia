@@ -22,7 +22,7 @@ u0 = [50.0,0.0]
 tspan = (0.0,50.0)
 p = 9.8
 prob = ODEProblem(f,u0,tspan,p)
-sol = solve(prob,Tsit5(),callback=cb)
+sol = solve(prob,Tsit5(),callback=cb, dtmax=1)
 plot(sol)
 
 t = range(0, stop=50, length=1024)
