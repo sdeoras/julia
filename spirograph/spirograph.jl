@@ -1,3 +1,6 @@
+using Plots
+gr()
+
 # spirograph takes three values that have defaults.
 # ratio is the radius of larger wheel / radius of smaller wheel (default is 4)
 # pen is the position of pen (between 0-1). 0 = center, 1 = edge.
@@ -15,4 +18,21 @@ function drawSpirograph(; ratio=4.0, pen=1.0, revolutions=1)
 	plot(x, y, size=[500, 450], linecolor=:red)
 end
 
-drawSpirograph(ratio=4.12, pen=0.7, revolutions=100)
+# iterate through these to see different patterns
+drawSpirograph(ratio=4.12, pen=0.7, revolutions=25)
+
+drawSpirograph(ratio=0.123, pen=1, revolutions=100)
+
+drawSpirograph(ratio=0.3, pen=1, revolutions=10)
+
+drawSpirograph(ratio=0.33, pen=1, revolutions=100)
+
+drawSpirograph(ratio=4, pen=1, revolutions=1)
+
+drawSpirograph(ratio=9.5, pen=1, revolutions=5)
+
+drawSpirograph(ratio=2.1, pen=1, revolutions=10)
+
+drawSpirograph(ratio=2.7, pen=1, revolutions=10)
+
+drawSpirograph(ratio=3.5, pen=0.3, revolutions=10)
