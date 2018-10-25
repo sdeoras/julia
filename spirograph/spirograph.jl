@@ -36,3 +36,7 @@ drawSpirograph(ratio=2.1, pen=1, revolutions=10)
 drawSpirograph(ratio=2.7, pen=1, revolutions=10)
 
 drawSpirograph(ratio=3.5, pen=0.3, revolutions=10)
+
+drawSpirograph(ratio=5.1, pen=1, revolutions=10)
+
+drawSpirograph(ratio=1.34, pen=0.1, revolutions=3)
