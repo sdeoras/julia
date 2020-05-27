@@ -1,4 +1,5 @@
 #!/usr/bin/env julia
+# color chart: http://juliagraphics.github.io/Colors.jl/stable/namedcolors/
 
 using Plots
 using Statistics
@@ -21,7 +22,7 @@ plot(
     aspect_ratio = :equal,
     border = :none,
     axis = nothing,
-    background_color = :black,
+    background_color = :white,
     xlim = [-25, 25],
     ylim = [-15, 15],
 )
@@ -49,6 +50,8 @@ function foo(x, y, px, py)
             grid = false,
             border = :none,
             axis = nothing,
+            lw = 0.5,
+            color = :grey66,
         )
     end
     return px, py
